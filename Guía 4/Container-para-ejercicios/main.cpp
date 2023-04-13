@@ -222,10 +222,10 @@ vector<string> palabrasMasLargas(vector<string> todasLasPalabras, int longitud){
 vector<string> palabrasMasLargas_recursiva(vector<string> todasLasPalabras, int longitud, int hasta){
         vector<string> v1 = {};
     //Casos Base
-    if(hasta == 0 && todasLasPalabras[hasta].length() == longitud){ //Si el primer elemento tiene la misma longitud 
+    if(hasta == 0 && todasLasPalabras[hasta].length() == longitud){ 
         v1.push_back(todasLasPalabras[hasta]);
         return v1;
-    }else if( hasta == 0 && todasLasPalabras[hasta].length() < 0){ //El primer elemento es negativo
+    }else if( hasta == 0 && todasLasPalabras[hasta].length() < 0){ 
         return v1;    
     }else{
         vector<string> aux = palabrasMasLargas_recursiva(todasLasPalabras, longitud, hasta-1);
