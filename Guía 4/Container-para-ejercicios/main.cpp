@@ -1,6 +1,4 @@
-//GUÍA 3 (Funciones con ciclos)
-
-
+//GUÍA 4
 #include <iostream>
 using namespace std;
 #include <string>
